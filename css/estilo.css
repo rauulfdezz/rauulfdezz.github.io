@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    background-color: #091731;
+}
+
+
+.header{
+    text-align: center;
+    background-image: url(../images/vialacteanav.jpg);
+    min-height: 50px;
+    padding-top: 0px;
+}
+
+.header h1{
+    margin: 0;
+    color: white;
+}
+
+.nav{
+    overflow: hidden;
+    font-size: x-large;
+    padding-left: 350px;
+    background-image: url(../images/vialacteanav.jpg);
+    border: 1px solid transparent; 
+}
+
+.nav a{
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+}
+
+
+.via{
+    text-align: center;
+    font-style: italic;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/vialactea.jpg);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-style: oblique;
+    min-height: 1000px;
+}
+
+.via h1{
+    padding-top: 250px;
+    font-size: 100px;
+}
+
+.via h1 mark{
+    opacity: 0.6;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+
+
+
