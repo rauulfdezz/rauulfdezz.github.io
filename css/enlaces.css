@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    background-color: #091731;
+    width: 100%;
+}
+
+
+.portada{
+  background-color: black;
+  position: relative;
+  background-image: url(../images/enlaces/enlacesPortada.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contenido-portada{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+.nav{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  min-height: 10px;
+}
+
+.nav a{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 14px 16px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav a:hover{
+  color: black;
+  background-color: white;
+  transition: 0.5s;
+}
+
+.enlaces{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 30px; 
+  margin: 20px;
+  margin-left: 15%;
+  margin-top: 3%;
+}
+
+
+.enlaces img{
+  width: 500px;
+  opacity: 0.7;
+  border-radius: 5%;
+}
+
+.card{
+  border: 1px solid black;
+  border-radius: 5%;
+  text-align: center;
+  box-shadow: 0 4px 8px black;
+  width: 500px;
+  background-color: black;
+  transition: transform 0.3s ease;
+}
+
+.card:hover{
+  transform: scale(1.1);
+}
+
+.card a{
+  text-decoration: none;
+  color: white;
+}
+
+.card2{
+  border: 1px solid black;
+  border-radius: 5%;
+  text-align: center;
+  box-shadow: 0 4px 8px black;
+  width: 500px;
+  background-color: black;
+  transition: transform 0.3s ease;
+}
+
+.card2:hover{
+  transform: scale(1.1);
+}
+
+.card2 a{
+  text-decoration: none;
+  color: white;
+}
+
+.card3{
+  border: 1px solid black;
+  border-radius: 5%;
+  text-align: center;
+  box-shadow: 0 4px 8px black;
+  width: 500px;
+  background-color: black;
+  transition: transform 0.3s ease;
+}
+
+.card3:hover{
+  transform: scale(1.1);
+}
+
+.card3 a{
+  text-decoration: none;
+  color: white;
+}
+
+.card4{
+  border: 1px solid black;
+  border-radius: 5%;
+  text-align: center;
+  box-shadow: 0 4px 8px black;
+  width: 500px;
+  background-color: black;
+  transition: transform 0.3s ease;
+}
+
+.card4:hover{
+  transform: scale(1.1);
+}
+
+.card4 a{
+  text-decoration: none;
+  color: white;
+}
+
+.card5{
+  border: 1px solid black;
+  border-radius: 5%;
+  text-align: center;
+  box-shadow: 0 4px 8px black;
+  width: 500px;
+  background-color: black;
+  transition: transform 0.3s ease;
+}
+
+.card5:hover{
+  transform: scale(1.1);
+}
+
+.card5 a{
+  text-decoration: none;
+  color: white;
+}

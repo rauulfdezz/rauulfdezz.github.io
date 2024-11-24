@@ -1,13 +1,14 @@
 body{
     margin: 0;
     background-color: #091731;
+    width: 100%;
 }
 
 
 .portada{
     position: relative;
     height: 100vh;
-    background-image: url(../images/vialactea.jpg);
+    background-image: url(../images/universo/vialactea.webp);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -73,6 +74,7 @@ h1{
     display: flex;
     justify-content: center;
     gap: 15px;
+    min-height: 10px;
 }
 
 .nav a{
@@ -101,57 +103,126 @@ h1{
 }
 
 .contenido{
-    max-width: 40%;
-    margin: 0 auto;
-    background-color: black;
-    border-radius: 2%;
-    animation: contenido 2s;
+  max-width: 100%;
+}
 
+.textoContenido{
+  background-color: black;
+  width: 50%;
+  border-radius: 5%;
+  margin: 0 auto;
 }
 
 .contenido p{
-    text-align: center;
     color: white;
     padding: 30px;
     font-size: 20px;
-    animation: contenido 2s;
+    text-align: justify;
 }
 
-@keyframes contenido {
-  from {
-    left: 0px;
-  }
-  to {
-    left: 200px;
-  }
-}
-
-
-
-
-
-
-/*.contenido h3{
-    text-align: center;
-    color: white;
-    font-size: 30px;
-}*/
 
 .siguiente{
-    position: relative;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 2%;
+  margin-left: 60px;
+  padding-right: 0 auto;
+  display: flex;
+  padding-top: 60px;
+  padding-left: 50px;
 }
 
 
 
+.texto{
+  background-color: black;
+  text-align: justify;
+  color: white;
+  padding: 20px;
+  font-size: 20px; 
+  width: 50%;
+  height: 300px;
+  border-radius: 5%;
+  margin-top: 50px;
+}
 
+.texto h3{
+  text-align: center;
+}
 
+.imagen img{
+  border-radius: 5%;
+}
 
+.imagen{
+  padding-left: 150px;
+  padding-right: 20px;
+}
+.universoSiguiente{
+  width: 100%;
+  height: 100%;
 
+}
+
+.video{
+  position: relative;
+  opacity: 0.5;
+  padding-top: 20px;
+}
+
+.siguiente2 .texto2{
+  position: absolute; 
+  top: 230%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  background-color: black;
+  color: white; 
+  padding: 10px 20px;
+  font-size: 20px; 
+  text-align: justify; 
+  border-radius: 8px;
+}
+
+.titulo2{
+  text-align: center;
+}
+
+.materia{
+  display: flex;
+}
+.imagenMat{
+  width: 50%;
+  margin-left: 200px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.imagenMat img{
+  border-radius: 5%;
+}
+
+.textoMat{
+  width: 30%;
+  background-color: black;
+  background-size: contain;
+  color: white;
+  height: 30%;
+  border-radius: 2%;
+  margin-top: 150px;
+  margin-left: 80px;
+  padding: 20px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.textoMat h3{
+  text-align: center;
+}
+
+.footer{
+  background-color: black;
+  color: white;
+  height: 50px;
+  text-align: center;
+  padding-top: 20px;
+}
