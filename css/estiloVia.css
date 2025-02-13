@@ -4,49 +4,38 @@ body{
     width: 100%;
 }
 
-h1{
-    background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, transparent, transparent);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-size: 10vw;
-  font-family: "Source Sans Pro", sans-serif;
-  -webkit-animation: reveal 0ms ease-in-out forwards 0ms, glow 2000ms linear infinite 0ms;
-          animation: reveal 0ms ease-in-out forwards 0ms, glow 2000ms linear infinite 0ms;
-    margin-left: 15%;
-}
-@-webkit-keyframes reveal {
-    80% {
-      letter-spacing: 8px;
-    }
-    100% {
-      background-size: 300% 300%;
-    }
-  }
-  @keyframes reveal {
-    80% {
-      letter-spacing: 8px;
-    }
-    100% {
-      background-size: 300% 300%;
-    }
-  }
-  @-webkit-keyframes glow {
-    40% {
-      text-shadow: 0 0 8px #fff;
-    }
-  }
-  @keyframes glow {
-    40% {
-      text-shadow: 0 0 8px #fff;
-    }
-  }
-
-.volver{
-    margin-left: 45%;
+.guia{
+    color: white;
+    margin-left: 5%;
 }
 
-.volver a{
+.portada{
+    background-color: black;
+    position: relative;
+    background-image: url(../images/vialacteaPortada.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contenido-portada{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    min-height: 10px;
+}
+
+.nav a{
     color: white;
     font-size: 20px;
     text-align: center;
@@ -55,10 +44,83 @@ h1{
     text-decoration: none;
 }
 
-.volver a:hover{
-    background-color: white;
+.nav a:hover{
     color: black;
+    background-color: white;
     transition: 0.5s;
+}
+
+.introduccion{
+    max-width: 100%;
+  border-radius: 2%;
+  padding-right: 0 auto;
+  display: flex;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+.texto{
+    background-color: black;
+    color: white;
+    width: 40%;
+    height: 30%;
+    border-radius: 5%;
+    text-align: justify;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.texto p{
+    padding: 20px;    
+}
+
+.texto h3{
+    text-align: center;
+}
+
+.imagenVia{
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+.imagenVia img{
+   border-radius: 5%;
+}
+
+.siguiente{
+    display: flex;
+    padding-top: 20px;
+}
+
+.texto2{
+    background-color: black;
+    color: white;
+    border-radius: 5%;
+    text-align: justify;
+    font-size: 20px;
+    margin-right: 40px;
+    padding: 20px;
+    width: 40%;
+}
+
+.texto p{
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.texto2 h3{
+    text-align: center;
+}
+
+.imagen2{
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 70%;
+}
+
+.imagen2 img{
+    border-radius: 5%;
 }
 
 .footer{
@@ -67,6 +129,6 @@ h1{
     height: 50px;
     text-align: center;
     padding-top: 20px;
-    margin-top: 372px;
-}
+    margin-top: 20px;
+  }
   

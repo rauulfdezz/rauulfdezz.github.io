@@ -2,51 +2,47 @@ body{
     margin: 0;
     background-color: #091731;
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-h1{
-    background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, transparent, transparent);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-size: 10vw;
-  font-family: "Source Sans Pro", sans-serif;
-  -webkit-animation: reveal 0ms ease-in-out forwards 0ms, glow 2000ms linear infinite 0ms;
-          animation: reveal 0ms ease-in-out forwards 0ms, glow 2000ms linear infinite 0ms;
-    margin-left: 15%;
-}
-@-webkit-keyframes reveal {
-    80% {
-      letter-spacing: 8px;
-    }
-    100% {
-      background-size: 300% 300%;
-    }
-  }
-  @keyframes reveal {
-    80% {
-      letter-spacing: 8px;
-    }
-    100% {
-      background-size: 300% 300%;
-    }
-  }
-  @-webkit-keyframes glow {
-    40% {
-      text-shadow: 0 0 8px #fff;
-    }
-  }
-  @keyframes glow {
-    40% {
-      text-shadow: 0 0 8px #fff;
-    }
-  }
-
-.volver{
-    margin-left: 45%;
+.guia{
+    color: white;
+    margin-left: 5%;
 }
 
-.volver a{
+
+.portada{
+    background-color: black;
+    position: relative;
+    background-image: url(../images/constelaciones.webp);
+    background-size: cover;
+    background-position: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.contenido-portada{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+.overlay{
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    min-height: 10px;
+}
+
+.nav a{
     color: white;
     font-size: 20px;
     text-align: center;
@@ -55,10 +51,50 @@ h1{
     text-decoration: none;
 }
 
-.volver a:hover{
-    background-color: white;
+.nav a:hover{
     color: black;
+    background-color: white;
     transition: 0.5s;
+}
+
+.osaMayor{
+    max-width: 100%;
+  border-radius: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1%;
+  margin-left: 5%;
+}
+
+.textoOsa{
+    background-color: black;
+    color: white;
+    width: 40%;
+    height: 30%;
+    border-radius: 5%;
+    text-align: justify;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.textoOsa p{
+    padding: 20px;    
+}
+
+.textoOsa h3{
+    text-align: center;
+}
+
+.imagenOsa{
+    padding-left: 20px;
+    padding-top: 30px;
+    height:20px
+}
+
+.imagenOsa img{
+   border-radius: 5%;
 }
 
 .footer{
@@ -66,7 +102,6 @@ h1{
     color: white;
     height: 50px;
     text-align: center;
-    padding-top: 20px;
-    margin-top: 372px;
+    margin-top: 30%;
+    padding-top: 1%;
 }
-  
