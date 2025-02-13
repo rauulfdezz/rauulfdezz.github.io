@@ -8,7 +8,7 @@ body{
 .portada{
   background-color: black;
   position: relative;
-  background-image: url(../images/enlaces/enlacesPortada.webp);
+  background-image: url(../images/enlacesPortada.webp);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

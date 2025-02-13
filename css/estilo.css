@@ -117,11 +117,6 @@ h1{
     text-align: justify;
 }
 
-/*.contenido h3{
-    text-align: center;
-    color: white;
-    font-size: 30px;
-}*/
 
 .siguiente{
   max-width: 100%;
@@ -171,16 +166,16 @@ h1{
 }
 
 .siguiente2 .texto2{
-  position: absolute; /* Posición absoluta para superposición */
-  top: 250%; /* Centra verticalmente */
-  left: 50%; /* Centra horizontalmente */
-  transform: translate(-50%, -50%); /* Ajusta el centro del texto */
+  position: absolute; 
+  top: 250%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
   background-color: black;
-  color: white; /* Color del texto */
-  padding: 10px 20px; /* Espaciado interno */
-  font-size: 20px; /* Tamaño del texto */
-  text-align: justify; /* Centrar texto */
-  border-radius: 8px; /* Bordes redondeados */
+  color: white; 
+  padding: 10px 20px; 
+  font-size: 20px; 
+  text-align: justify; 
+  border-radius: 8px; 
 }
 
 .titulo2{
