@@ -106,7 +106,7 @@ body{
     padding-top: 1%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     
     .portada {
         background-position: center;
