@@ -69,4 +69,27 @@ h1{
     padding-top: 20px;
     margin-top: 372px;
 }
+
+@media screen and (max-width: 768px) {
+  
+  h1 {
+      font-size: 12vw;
+      text-align: center;
+      margin-left: 0;
+  }
+
+  
+  .volver {
+      margin-left: 0;
+      display: flex;
+      justify-content: center;
+  }
+
+  
+  .footer {
+      margin-top: 165%;
+      padding: 15px;
+  }
+}
+
   

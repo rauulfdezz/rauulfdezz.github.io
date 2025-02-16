@@ -156,3 +156,53 @@ body{
   text-decoration: none;
   color: white;
 }
+
+@media screen and (max-width: 768px) {
+  
+  .portada {
+      background-position: center;
+      background-attachment: scroll;
+      padding: 20px;
+  }
+
+  .contenido-portada {
+      font-size: 5vw;
+      padding: 10px;
+  }
+
+  
+  .nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+
+  .nav a {
+      font-size: 16px;
+      padding: 10px;
+      width: 100%;
+      text-align: center;
+  }
+
+  
+  .enlaces {
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+      margin-left: 0;
+      gap: 20px;
+  }
+
+  .card,
+  .card2,
+  .card3,
+  .card4,
+  .card5 {
+      width: 90%;
+      max-width: 400px;
+  }
+
+  .enlaces img {
+      width: 100%;
+      max-width: 400px;
+  }
+}

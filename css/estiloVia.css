@@ -10,9 +10,8 @@ body{
 }
 
 .portada{
-    background-color: black;
     position: relative;
-    background-image: url(../images/vialacteaPortada.webp);
+    background-image: url(../images/vialacteaPortada.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -21,6 +20,7 @@ body{
     align-items: center;
     text-align: center;
 }
+
 
 .contenido-portada{
     color: white;
@@ -57,6 +57,17 @@ body{
   display: flex;
   padding-top: 30px;
   padding-left: 50px;
+  gap: 150px;
+}
+
+.apartado{
+    max-width: 100%;
+  border-radius: 2%;
+  padding-right: 0 auto;
+  display: flex;
+  padding-top: 30px;
+  padding-left: 50px;
+  gap: 150px;
 }
 
 .texto{
@@ -81,6 +92,7 @@ body{
 .imagenVia{
     padding-left: 100px;
     padding-top: 50px;
+    padding-bottom: 100px;
 }
 
 .imagenVia img{
@@ -132,3 +144,90 @@ body{
     margin-top: 20px;
   }
   
+@media screen and (max-width: 768px) {
+    
+    .portada {
+        height: auto;
+        min-height: 80vh;
+        background-attachment: scroll;
+        padding: 20px;
+    }
+
+    .contenido-portada {
+        font-size: 5vw;
+    }
+
+    
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav a {
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    
+    .introduccion {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .apartado {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .texto {
+        width: 90%;
+        height: auto;
+        font-size: 18px;
+    }
+
+    .imagenVia {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .imagenVia img {
+        width: 90%;
+        height: auto;
+    }
+
+    
+    .siguiente {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto2 {
+        width: 90%;
+        font-size: 18px;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .imagen2 {
+        width: 90%;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .imagen2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    
+    .footer {
+        font-size: 14px;
+    }
+}
