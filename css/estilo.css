@@ -8,7 +8,7 @@ body{
 .portada{
   position: relative;
   height: 100vh;
-  background-image: url(../images/vialactea.jpg);
+  background-image: url(../images/vialactea.webp);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
