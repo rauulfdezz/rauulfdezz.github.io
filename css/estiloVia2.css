@@ -31,7 +31,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 2vw;
-    min-height: 10px;
+    min-height: 2%;
 }
 
 .nav a {
@@ -46,8 +46,9 @@ body {
     color: black;
     background-color: white;
 }
+
 .introduccion {
-    max-width: 1100px;
+    max-width: 100%;
     margin: 3vw auto 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -64,29 +65,29 @@ body {
     text-align: justify;
     font-size: 1.2vw;
     padding: 2vw;
-    min-width: 260px;
-    flex: 1 1 320px;
+    min-width: 24%;
+    flex: 1 1 29%;
 }
 
 .imagenVia {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 400px;
-    flex: 2 1 800px;
+    min-width: 37%;
+    flex: 2 1 60%;
 }
 
 .imagenVia img {
     border-radius: 1vw;
     width: 100%;
-    max-width: 900px;
+    max-width: 90%;
     height: auto;
     display: block;
     object-fit: cover;
 }
 
 .apartado {
-    max-width: 1100px;
+    max-width: 100%;
     margin: 2vw auto 0 auto;
     padding: 2vw 4vw;
     display: flex;
@@ -97,8 +98,8 @@ body {
 }
 
 .apartado > div {
-    flex: 1 1 320px;
-    min-width: 260px;
+    flex: 1 1 29%;
+    min-width: 24%;
     background: black;
     color: inherit;
     border-radius: 1vw;
@@ -115,21 +116,33 @@ body {
 }
 
 .apartado ul {
+    color: white;
     margin-left: 2vw;
     margin-bottom: 2vw;
+}
+
+.texto2>p{
+    color: white;
+    font-size: 1.2vw;
+}
+
+.imagen2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
 }
 
 .footer {
     background-color: black;
     color: white;
-    height: 50px;
+    height: 5%;
     text-align: center;
-    padding-top: 20px;
-    margin-top: 20px;
+    padding-top: 2%;
+    margin-top: 2%;
     font-size: 1vw;
 }
 
-/* Responsive */
 @media screen and (max-width: 1024px) {
     .contenido-portada {
         font-size: 4vw;
@@ -151,7 +164,7 @@ body {
         padding: 4vw 2vw;
     }
     .texto, .imagenVia {
-        min-width: 180px;
+        min-width: 18%;
         width: 90%;
         margin: 0 auto;
         font-size: 2vw;
@@ -193,6 +206,6 @@ body {
     .footer {
         font-size: 2.5vw;
         padding-top: 3vw;
-        min-height: 40px;
+        min-height: 4%;
     }
 }

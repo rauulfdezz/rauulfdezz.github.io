@@ -24,21 +24,21 @@ body {
 .contenido-portada {
     color: white;
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 2.5%;
 }
 
 .nav {
     display: flex;
     justify-content: center;
-    gap: 2vw;
-    min-height: 10px;
+    gap: 2%;
+    min-height: 0.7%;
 }
 
 .nav a {
     color: white;
-    font-size: 1.3vw;
+    font-size: 1.3%;
     text-align: center;
-    padding: 1vw 1.2vw;
+    padding: 1% 1.2%;
     text-decoration: none;
 }
 
@@ -65,10 +65,10 @@ body {
     background-color: black; 
     color: white;
     width: 40%;
-    min-width: 260px;
+    min-width: 20.8%;
     border-radius: 5%;
     text-align: justify;
-    font-size: 1.2vw;
+    font-size: 1.2%;
     padding: 2%;
     box-sizing: border-box;
     order: 1; 
@@ -78,7 +78,7 @@ body {
 .imagen2 {
     padding: 2% 0 4% 5%;
     box-sizing: border-box;
-    min-width: 50%;
+    min-width: 20.8%;
     width: 40%;
     display: flex;
     align-items: center;
@@ -88,7 +88,7 @@ body {
 }
 
 .imagen2>img{
-    margin-top: 10%;
+    margin-top: 6.7%;
 }
 
 .imagenVia img,
@@ -108,11 +108,11 @@ body {
 .footer {
     background-color: black;
     color: white;
-    height: 50px;
+    height: 3.5%;
     text-align: center;
-    padding-top: 20px;
-    margin-top: 20px;
-    font-size: 1vw;
+    padding-top: 1.4%;
+    margin-top: 1.4%;
+    font-size: 1%;
 }
 
 .apartado {
@@ -122,7 +122,7 @@ body {
 .apartado .imagen2 {
     order: 1;
     width: 50%;
-    min-width: 260px;
+    min-width: 20.8%;
     padding: 2% 5% 4% 0;
     display: flex;
     align-items: center;
@@ -132,47 +132,47 @@ body {
 
 .apartado .imagen2 img {
     width: 100%;
-    border-radius: 2vw;
-    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.25);
-    border: 2px solid;
+    border-radius: 2%;
+    box-shadow: 0 0.28% 1.6% 0 rgba(0,0,0,0.25);
+    border: 0.14% solid;
 }
 
 .apartado .texto2 {
     background-color: black; 
     color: white;
-    border-radius: 2vw;
+    border-radius: 2%;
     text-align: justify;
-    font-size: 1.2vw;
-    padding: 2.5vw 2vw;
+    font-size: 1.2%;
+    padding: 2.5% 2%;
     box-sizing: border-box;
-    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.18);
+    box-shadow: 0 0.28% 1.6% 0 rgba(0,0,0,0.18);
     order: 2;
     width: 40%;
-    min-width: 220px;
-    margin-left: 2vw;
+    min-width: 17.2%;
+    margin-left: 1.4%;
 }
 
 @media screen and (max-width: 1024px) {
     .portada {
-        height: auto;
-        min-height: 60vh;
+        min-height: 30%;
+        padding: 4% 0;
         background-attachment: scroll;
-        padding: 4vw 0;
     }
 
     .contenido-portada {
-        font-size: 4vw;
+        font-size: 4%;
+        padding: 2% 2%;
     }
 
     .nav {
         flex-direction: column;
         align-items: center;
-        gap: 1vw;
+        gap: 2%;
     }
 
     .nav a {
-        font-size: 2vw;
-        padding: 2vw 0;
+        font-size: 2.5%;
+        padding: 2% 0;
         width: 100%;
         text-align: center;
     }
@@ -180,56 +180,50 @@ body {
     .introduccion,
     .apartado {
         flex-direction: column;
-        align-items: center;
-        padding: 4vw 2vw 0 2vw;
-        gap: 2vw;
+        align-items: stretch;
+        padding: 4% 2% 0 2%;
+        gap: 3%;
         text-align: center;
     }
 
     .texto,
-    .texto2 {
-        width: 90%;
-        font-size: 2vw;
-        min-width: 180px;
-        margin: 0 auto;
-        text-align: center;
-        order: unset;
-    }
-
+    .texto2,
     .imagenVia,
     .imagen2 {
-        width: 90%;
-        min-width: 180px;
-        padding: 2vw 0;
+        width: 100%;
+        min-width: 0;
+        font-size: 2.2%;
+        margin: 0 auto 2% auto;
         text-align: center;
-        margin: 0 auto;
+        padding: 3% 2%;
         order: unset;
-        justify-content: center;
     }
 
     .imagenVia img,
     .imagen2 img {
         width: 100%;
+        max-width: 100%;
         height: auto;
     }
 
     .footer {
-        font-size: 1.5vw;
+        font-size: 1.5%;
+        padding-top: 3%;
     }
 
     .apartado {
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
     }
     .apartado .imagen2,
     .apartado .texto2 {
-        width: 90%;
-        min-width: 180px;
-        margin: 0 auto;
+        width: 100%;
+        min-width: 0;
+        margin: 0 auto 2% auto;
         text-align: center;
         order: unset;
         justify-content: center;
-        padding: 2vw 0;
+        padding: 3% 2%;
     }
     .apartado .texto2 {
         margin-left: 0;
@@ -238,32 +232,36 @@ body {
 
 @media screen and (max-width: 600px) {
     .contenido-portada {
-        font-size: 6vw;
+        font-size: 6%;
+        padding: 6% 2%;
     }
 
     .nav a {
-        font-size: 3vw;
-        padding: 3vw 0;
+        font-size: 4%;
+        padding: 4% 0;
+    }
+
+    .introduccion,
+    .apartado {
+        padding: 6% 2% 0 2%;
+        gap: 4%;
     }
 
     .texto,
-    .texto2 {
-        width: 98%;
-        font-size: 3vw;
-        min-width: 120px;
-        padding: 4vw 2vw;
-    }
-
+    .texto2,
     .imagenVia,
     .imagen2 {
-        width: 98%;
-        min-width: 120px;
-        padding: 2vw 0;
+        width: 100%;
+        min-width: 0;
+        font-size: 3.5%;
+        padding: 4% 2%;
+        margin-bottom: 3%;
     }
 
     .footer {
-        font-size: 2.5vw;
-        padding-top: 3vw;
+        font-size: 3%;
+        padding-top: 4%;
         height: auto;
+        margin-top: 4%;
     }
 }
