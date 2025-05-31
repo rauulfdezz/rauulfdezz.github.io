@@ -11,7 +11,7 @@ body {
 
 .portada {
     position: relative;
-    background-image: url(../images/constelaciones.webp);
+    background-image: url(../images/vialacteaPortada.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -20,7 +20,6 @@ body {
     align-items: center;
     text-align: center;
 }
-
 
 .contenido-portada {
     color: white;
@@ -47,10 +46,9 @@ body {
     color: black;
     background-color: white;
 }
-
 .introduccion {
-    max-width: 100%;
-    margin: 0 auto;
+    max-width: 1100px;
+    margin: 3vw auto 0 auto;
     display: flex;
     flex-wrap: wrap;
     gap: 4vw;
@@ -66,31 +64,29 @@ body {
     text-align: justify;
     font-size: 1.2vw;
     padding: 2vw;
-    min-width: 26%;
-    flex: 1 1 32%;
-    margin-left: 0;
+    min-width: 260px;
+    flex: 1 1 320px;
 }
 
 .imagenVia {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 32%;
-    flex: 1 1 48%;
+    min-width: 400px;
+    flex: 2 1 800px;
 }
 
 .imagenVia img {
     border-radius: 1vw;
     width: 100%;
-    max-width: 60%;
+    max-width: 900px;
     height: auto;
     display: block;
     object-fit: cover;
-    background: black;
 }
 
 .apartado {
-    max-width: 100%;
+    max-width: 1100px;
     margin: 2vw auto 0 auto;
     padding: 2vw 4vw;
     display: flex;
@@ -100,35 +96,17 @@ body {
     align-items: flex-start;
 }
 
-.imagen2 {
-    padding-top: 2%;
-    flex: 1 1 32%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.imagen2 img {
-    border-radius: 1vw;
-    width: 115%;
-    height: auto;
-    display: block;
-    object-fit: cover;
+.apartado > div {
+    flex: 1 1 320px;
+    min-width: 260px;
     background: black;
-}
-
-.texto2 {
-    background-color: black;
-    color: white;
+    color: inherit;
     border-radius: 1vw;
-    text-align: justify;
-    font-size: 1.2vw;
-    padding: 2vw;
-    min-width: 26%;
-    flex: 2 1 48%;
+    padding: 1vw 2vw;
+    box-sizing: border-box;
 }
 
-.texto2 h3 {
+.apartado h3 {
     color: white;
     margin-top: 2vw;
     margin-bottom: 1vw;
@@ -136,15 +114,19 @@ body {
     text-align: left;
 }
 
+.apartado ul {
+    margin-left: 2vw;
+    margin-bottom: 2vw;
+}
+
 .footer {
     background-color: black;
     color: white;
-    min-height: 5%;
+    height: 50px;
     text-align: center;
-    padding-top: 2%;
-    margin-top: 4%;
-    font-size: 1.1em;
-    letter-spacing: 1px;
+    padding-top: 20px;
+    margin-top: 20px;
+    font-size: 1vw;
 }
 
 /* Responsive */
@@ -168,16 +150,27 @@ body {
         gap: 2vw;
         padding: 4vw 2vw;
     }
-    .texto, .imagenVia, .texto2, .imagen2 {
-        min-width: 18%;
+    .texto, .imagenVia {
+        min-width: 180px;
         width: 90%;
         margin: 0 auto;
         font-size: 2vw;
     }
     .apartado {
+        padding: 4vw 2vw;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .apartado {
         flex-direction: column;
         gap: 2vw;
         padding: 4vw 2vw;
+    }
+    .apartado > div {
+        width: 100%;
+        min-width: 0;
+        padding: 2vw 0;
     }
 }
 
@@ -190,16 +183,16 @@ body {
         font-size: 3vw;
         padding: 3vw 0;
     }
-    .introduccion, .apartado {
+    .introduccion {
         padding: 6vw 2vw;
     }
-    .texto, .imagenVia, .texto2, .imagen2 {
+    .texto, .imagenVia {
         font-size: 3vw;
         padding: 4vw 2vw;
     }
     .footer {
         font-size: 2.5vw;
         padding-top: 3vw;
-        min-height: 4%;
+        min-height: 40px;
     }
 }

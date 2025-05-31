@@ -1,15 +1,15 @@
-body{
+body {
     margin: 0;
     background-color: #091731;
     width: 100%;
 }
 
-.guia{
+.guia {
     color: white;
     margin-left: 5%;
 }
 
-.portada{
+.portada {
     position: relative;
     background-image: url(../images/vialacteaPortada.jpg);
     background-size: cover;
@@ -21,213 +21,249 @@ body{
     text-align: center;
 }
 
-
-.contenido-portada{
+.contenido-portada {
     color: white;
     text-align: center;
-    font-size: 30px;
+    font-size: 2.5vw;
 }
 
-.nav{
+.nav {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 2vw;
     min-height: 10px;
 }
 
-.nav a{
+.nav a {
     color: white;
-    font-size: 20px;
+    font-size: 1.3vw;
     text-align: center;
-    padding: 14px 16px;
-    color: white;
+    padding: 1vw 1.2vw;
     text-decoration: none;
 }
 
-.nav a:hover{
+.nav a:hover {
     color: black;
     background-color: white;
-    transition: 0.5s;
 }
 
-.introduccion{
+.introduccion,
+.apartado {
     max-width: 100%;
-  border-radius: 2%;
-  padding-right: 0 auto;
-  display: flex;
-  padding-top: 30px;
-  padding-left: 50px;
-  gap: 150px;
-}
-
-.apartado{
-    max-width: 100%;
-  border-radius: 2%;
-  padding-right: 0 auto;
-  display: flex;
-  padding-top: 30px;
-  padding-left: 50px;
-  gap: 150px;
-}
-
-.texto{
-    background-color: black;
-    color: white;
-    width: 40%;
-    height: 30%;
-    border-radius: 5%;
-    text-align: justify;
-    font-size: 20px;
-    padding: 10px;
-}
-
-.texto p{
-    padding: 20px;    
-}
-
-.texto h3{
-    text-align: center;
-}
-
-.imagenVia{
-    padding-left: 100px;
-    padding-top: 50px;
-    padding-bottom: 100px;
-}
-
-.imagenVia img{
-   border-radius: 5%;
-}
-
-.siguiente{
+    border-radius: 2%;
     display: flex;
-    padding-top: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 3% 5% 0 5%;
+    gap: 5%;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-.texto2{
-    background-color: black;
+.texto,
+.texto2 {
+    background-color: black; 
     color: white;
+    width: 40%;
+    min-width: 260px;
     border-radius: 5%;
     text-align: justify;
-    font-size: 20px;
-    margin-right: 40px;
-    padding: 20px;
+    font-size: 1.2vw;
+    padding: 2%;
+    box-sizing: border-box;
+    order: 1; 
+}
+
+.imagenVia,
+.imagen2 {
+    padding: 2% 0 4% 5%;
+    box-sizing: border-box;
+    min-width: 50%;
     width: 40%;
-}
-
-.texto p{
-    padding: 10px;
-    padding-left: 20px;
-}
-
-.texto2 h3{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    order: 2;
     text-align: center;
 }
 
-.imagen2{
-    padding-top: 100px;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 70%;
+.imagen2>img{
+    margin-top: 10%;
 }
 
-.imagen2 img{
+.imagenVia img,
+.imagen2 img {
     border-radius: 5%;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
 
-.footer{
+.texto h3,
+.texto2 h3 {
+    text-align: center;
+}
+
+.footer {
     background-color: black;
     color: white;
     height: 50px;
     text-align: center;
     padding-top: 20px;
     margin-top: 20px;
-  }
-  
+    font-size: 1vw;
+}
+
+.apartado {
+    flex-direction: row;
+}
+
+.apartado .imagen2 {
+    order: 1;
+    width: 50%;
+    min-width: 260px;
+    padding: 2% 5% 4% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;      
+}
+
+.apartado .imagen2 img {
+    width: 100%;
+    border-radius: 2vw;
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.25);
+    border: 2px solid;
+}
+
+.apartado .texto2 {
+    background-color: black; 
+    color: white;
+    border-radius: 2vw;
+    text-align: justify;
+    font-size: 1.2vw;
+    padding: 2.5vw 2vw;
+    box-sizing: border-box;
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.18);
+    order: 2;
+    width: 40%;
+    min-width: 220px;
+    margin-left: 2vw;
+}
+
 @media screen and (max-width: 1024px) {
-    
     .portada {
         height: auto;
-        min-height: 80vh;
+        min-height: 60vh;
         background-attachment: scroll;
-        padding: 20px;
+        padding: 4vw 0;
     }
 
     .contenido-portada {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
-    
     .nav {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 1vw;
     }
 
     .nav a {
-        font-size: 16px;
-        padding: 10px;
+        font-size: 2vw;
+        padding: 2vw 0;
         width: 100%;
         text-align: center;
     }
 
-    
-    .introduccion {
-        flex-direction: column;
-        align-items: center;
-        padding-left: 0;
-        text-align: center;
-    }
-
+    .introduccion,
     .apartado {
         flex-direction: column;
         align-items: center;
-        padding-left: 0;
+        padding: 4vw 2vw 0 2vw;
+        gap: 2vw;
         text-align: center;
     }
 
-    .texto {
-        width: 90%;
-        height: auto;
-        font-size: 18px;
-    }
-
-    .imagenVia {
-        padding: 20px 0;
-        text-align: center;
-    }
-
-    .imagenVia img {
-        width: 90%;
-        height: auto;
-    }
-
-    
-    .siguiente {
-        flex-direction: column;
-        align-items: center;
-    }
-
+    .texto,
     .texto2 {
         width: 90%;
-        font-size: 18px;
-        margin-right: 0;
+        font-size: 2vw;
+        min-width: 180px;
+        margin: 0 auto;
         text-align: center;
+        order: unset;
     }
 
+    .imagenVia,
     .imagen2 {
         width: 90%;
-        padding: 20px 0;
+        min-width: 180px;
+        padding: 2vw 0;
         text-align: center;
+        margin: 0 auto;
+        order: unset;
+        justify-content: center;
     }
 
+    .imagenVia img,
     .imagen2 img {
         width: 100%;
         height: auto;
     }
 
-    
     .footer {
-        font-size: 14px;
+        font-size: 1.5vw;
+    }
+
+    .apartado {
+        flex-direction: column;
+        align-items: center;
+    }
+    .apartado .imagen2,
+    .apartado .texto2 {
+        width: 90%;
+        min-width: 180px;
+        margin: 0 auto;
+        text-align: center;
+        order: unset;
+        justify-content: center;
+        padding: 2vw 0;
+    }
+    .apartado .texto2 {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contenido-portada {
+        font-size: 6vw;
+    }
+
+    .nav a {
+        font-size: 3vw;
+        padding: 3vw 0;
+    }
+
+    .texto,
+    .texto2 {
+        width: 98%;
+        font-size: 3vw;
+        min-width: 120px;
+        padding: 4vw 2vw;
+    }
+
+    .imagenVia,
+    .imagen2 {
+        width: 98%;
+        min-width: 120px;
+        padding: 2vw 0;
+    }
+
+    .footer {
+        font-size: 2.5vw;
+        padding-top: 3vw;
+        height: auto;
     }
 }
