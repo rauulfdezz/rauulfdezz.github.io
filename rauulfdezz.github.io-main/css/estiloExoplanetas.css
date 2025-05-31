@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    background-color: #091731;
+    width: 100%;
+}
+
+h1{
+    background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 10vw;
+  font-family: "Source Sans Pro", sans-serif;
+  -webkit-animation: reveal 0ms ease-in-out forwards 0ms, glow 2000ms linear infinite 0ms;
+          animation: reveal 0ms ease-in-out forwards 0ms, glow 2000ms linear infinite 0ms;
+    margin-left: 15%;
+}
+@-webkit-keyframes reveal {
+    80% {
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+  @keyframes reveal {
+    80% {
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+  @-webkit-keyframes glow {
+    40% {
+      text-shadow: 0 0 8px #fff;
+    }
+  }
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 8px #fff;
+    }
+  }
+
+.volver{
+    margin-left: 45%;
+}
+
+.volver a{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 14px 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.volver a:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    height: 50px;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 372px;
+}
+
+@media screen and (max-width: 1024px) {
+  
+  h1 {
+      font-size: 12vw;
+      text-align: center;
+      margin-left: 0;
+  }
+
+  
+  .volver {
+      margin-left: 0;
+      display: flex;
+      justify-content: center;
+  }
+
+  
+  .footer {
+      margin-top: 165%;
+      padding: 15px;
+  }
+}
+
+  

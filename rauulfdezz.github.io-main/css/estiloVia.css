@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    background-color: #091731;
+    width: 100%;
+}
+
+.guia {
+    color: white;
+    margin-left: 5%;
+}
+
+.portada {
+    position: relative;
+    background-image: url(../images/vialacteaPortada.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contenido-portada {
+    color: white;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    min-height: 10px;
+}
+
+.nav a {
+    color: white;
+    font-size: 1.3vw;
+    text-align: center;
+    padding: 1vw 1.2vw;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: black;
+    background-color: white;
+}
+
+.introduccion,
+.apartado {
+    max-width: 100%;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 3% 5% 0 5%;
+    gap: 5%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.texto,
+.texto2 {
+    background-color: black; 
+    color: white;
+    width: 40%;
+    min-width: 260px;
+    border-radius: 5%;
+    text-align: justify;
+    font-size: 1.2vw;
+    padding: 2%;
+    box-sizing: border-box;
+    order: 1; 
+}
+
+.imagenVia,
+.imagen2 {
+    padding: 2% 0 4% 5%;
+    box-sizing: border-box;
+    min-width: 50%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    order: 2;
+    text-align: center;
+}
+
+.imagen2>img{
+    margin-top: 10%;
+}
+
+.imagenVia img,
+.imagen2 img {
+    border-radius: 5%;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.texto h3,
+.texto2 h3 {
+    text-align: center;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    height: 50px;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    font-size: 1vw;
+}
+
+.apartado {
+    flex-direction: row;
+}
+
+.apartado .imagen2 {
+    order: 1;
+    width: 50%;
+    min-width: 260px;
+    padding: 2% 5% 4% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;      
+}
+
+.apartado .imagen2 img {
+    width: 100%;
+    border-radius: 2vw;
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.25);
+    border: 2px solid;
+}
+
+.apartado .texto2 {
+    background-color: black; 
+    color: white;
+    border-radius: 2vw;
+    text-align: justify;
+    font-size: 1.2vw;
+    padding: 2.5vw 2vw;
+    box-sizing: border-box;
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.18);
+    order: 2;
+    width: 40%;
+    min-width: 220px;
+    margin-left: 2vw;
+}
+
+@media screen and (max-width: 1024px) {
+    .portada {
+        height: auto;
+        min-height: 60vh;
+        background-attachment: scroll;
+        padding: 4vw 0;
+    }
+
+    .contenido-portada {
+        font-size: 4vw;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 1vw;
+    }
+
+    .nav a {
+        font-size: 2vw;
+        padding: 2vw 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .introduccion,
+    .apartado {
+        flex-direction: column;
+        align-items: center;
+        padding: 4vw 2vw 0 2vw;
+        gap: 2vw;
+        text-align: center;
+    }
+
+    .texto,
+    .texto2 {
+        width: 90%;
+        font-size: 2vw;
+        min-width: 180px;
+        margin: 0 auto;
+        text-align: center;
+        order: unset;
+    }
+
+    .imagenVia,
+    .imagen2 {
+        width: 90%;
+        min-width: 180px;
+        padding: 2vw 0;
+        text-align: center;
+        margin: 0 auto;
+        order: unset;
+        justify-content: center;
+    }
+
+    .imagenVia img,
+    .imagen2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer {
+        font-size: 1.5vw;
+    }
+
+    .apartado {
+        flex-direction: column;
+        align-items: center;
+    }
+    .apartado .imagen2,
+    .apartado .texto2 {
+        width: 90%;
+        min-width: 180px;
+        margin: 0 auto;
+        text-align: center;
+        order: unset;
+        justify-content: center;
+        padding: 2vw 0;
+    }
+    .apartado .texto2 {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contenido-portada {
+        font-size: 6vw;
+    }
+
+    .nav a {
+        font-size: 3vw;
+        padding: 3vw 0;
+    }
+
+    .texto,
+    .texto2 {
+        width: 98%;
+        font-size: 3vw;
+        min-width: 120px;
+        padding: 4vw 2vw;
+    }
+
+    .imagenVia,
+    .imagen2 {
+        width: 98%;
+        min-width: 120px;
+        padding: 2vw 0;
+    }
+
+    .footer {
+        font-size: 2.5vw;
+        padding-top: 3vw;
+        height: auto;
+    }
+}
