@@ -67,7 +67,6 @@ body {
     width: 40%;
     min-width: 20.8%;
     border-radius: 5%;
-    text-align: justify;
     font-size: 1.2%;
     padding: 2%;
     box-sizing: border-box;
@@ -141,7 +140,6 @@ body {
     background-color: black; 
     color: white;
     border-radius: 2%;
-    text-align: justify;
     font-size: 1.2%;
     padding: 2.5% 2%;
     box-sizing: border-box;
