@@ -63,7 +63,6 @@ body {
     background-color: black;
     color: white;
     border-radius: 1vw;
-    text-align: justify;
     font-size: 1.2vw;
     padding: 2vw;
     min-width: 26%;
@@ -121,7 +120,6 @@ body {
     background-color: black;
     color: white;
     border-radius: 1vw;
-    text-align: justify;
     font-size: 1.2vw;
     padding: 2vw;
     min-width: 26%;
@@ -147,7 +145,7 @@ body {
     letter-spacing: 1px;
 }
 
-/* Responsive */
+
 @media screen and (max-width: 1024px) {
     .contenido-portada {
         font-size: 4vw;
