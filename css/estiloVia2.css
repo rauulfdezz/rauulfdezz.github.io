@@ -121,6 +121,12 @@ body {
     margin-bottom: 2vw;
 }
 
+.misterio>p{
+    color: white;
+    font-size: 1.2vw;
+}
+
+
 .texto2>p{
     color: white;
     font-size: 1.2vw;
